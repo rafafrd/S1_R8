@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="7"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 11:04:11 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIxMDozMToyMiAiOzI2NTg="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIxMTowNDoxMSAiOzE7Mjc2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="primeiroValor, valorFinal, saltos, primeiroValor1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um valor inicial: &quot;" newline="True"/>
+            <input variable="primeiroValor"/>
+            <assign variable="primeiroValor1" expression="primeiroValor"/>
+            <output expression="&quot;Digite um valor final: &quot;" newline="True"/>
+            <input variable="valorFinal"/>
+            <output expression="&quot;Digite um valor do incremento: &quot;" newline="True"/>
+            <input variable="saltos"/>
+            <if expression="valorFinal &gt; primeiroValor">
+                <then>
+                    <while expression="primeiroValor1 &lt;= valorFinal">
+                        <assign variable="primeiroValor1" expression="primeiroValor1 + saltos"/>
+                        <output expression="primeiroValor1" newline="True"/>
+                    </while>
+                    <for variable="primeiroValor1" start="primeiroValor" end="valorFinal" direction="inc" step="saltos">
+                        <output expression="primeiroValor1" newline="True"/>
+                    </for>
+                    <output expression="&quot;Fim&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voce inseriu um valor final maior que o inicial&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 09:57:36 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxMjo0NCAiOzI2Njg="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxOToxNCAiOzE7REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxNToyNiAiOzQuZnByZzs2MDk4"/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo1NzozNiAiOzM7Mjc4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="0"/>
+            <output expression="x" newline="True"/>
+            <while expression="x &lt; 30">
+                <assign variable="x" expression="x + 3"/>
+                <output expression="x" newline="True"/>
+            </while>
+            <output expression="&quot;Fim&quot;" newline="True"/>
+            <for variable="y" start="0" end="30" direction="inc" step="3">
+                <output expression="y" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

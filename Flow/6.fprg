@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="6"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 09:55:37 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOToyMDo0NCAiOzI2Njg="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo1NTozNyAiOzI7Mjc4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="31"/>
+            <while expression="x &gt;= 1">
+                <assign variable="x" expression="x - 1"/>
+                <if expression="x % 4 == 0">
+                    <then>
+                        <output expression="&quot;[&quot; &amp;x &amp;&quot;]&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="x" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

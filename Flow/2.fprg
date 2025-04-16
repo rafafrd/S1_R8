@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 09:56:42 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODowNjozNyAiOzI2NzM="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxOToyNSAiOzE7REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxNToyNiAiOzQuZnByZzs2MTAw"/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo1Njo0MiAiOzM7Mjc4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="10"/>
+            <output expression="x" newline="True"/>
+            <while expression="x &gt; 1">
+                <assign variable="x" expression="x - 1"/>
+                <output expression="x" newline="True"/>
+            </while>
+            <output expression="&quot;Fim&quot;" newline="True"/>
+            <for variable="y" start="10" end="1" direction="dec" step="1">
+                <output expression="y" newline="True"/>
+            </for>
+            <output expression="&quot;Fim&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
