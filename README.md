@@ -77,6 +77,8 @@ Programas em Flowgorithm e JavaScript demonstrando diferentes estruturas de repe
 2. Abra os arquivos `.fprg` no Flowgorithm
 3. Execute cada programa individualmente
 4. Compare as implementações equivalentes
+5. Para os `.js` crie um `.html`
+6. Coloque a tag script e adicione o exercício desejado
 
 ## 📌 Observações
 - Maioria dos exercícios implementados em três versões (WHILE/FOR/DO-WHILE)
