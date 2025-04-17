@@ -3,29 +3,38 @@
     <attributes>
         <attribute name="name" value="5"/>
         <attribute name="authors" value="DES-MH"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-16 10:03:20 "/>
-        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxOTo0MSAiOzI2NzI="/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoyNToyNyAiOzE7REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxNToyNiAiOzQuZnByZzs2MDk5"/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIxMDowMzoyMCAiOzI7Mjc2NA=="/>
+        <attribute name="about" value="Custom count with 3 loops"/>
+        <attribute name="saved" value="2025-04-17 09:12:39 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE3OyIwOToxMjowOSAiOzI2NzE="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE3OyIwOToxMjozOSAiOzE7Mjc4Mg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="x, n" type="Integer" array="False" size=""/>
-            <output expression="&quot;Digite um numero para contar&quot;" newline="True"/>
+            <declare name="x, y, z, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero para contar:&quot;" newline="True"/>
             <input variable="n"/>
             <assign variable="x" expression="0"/>
+            <output expression="&quot;While Loop:&quot;" newline="True"/>
             <output expression="x" newline="True"/>
             <while expression="x &lt; n">
                 <assign variable="x" expression="x + 1"/>
                 <output expression="x" newline="True"/>
             </while>
-            <output expression="&quot;Fim&quot;" newline="True"/>
-            <declare name="y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fim While&quot;" newline="True"/>
+            <output expression="&quot;For Loop:&quot;" newline="True"/>
             <for variable="y" start="0" end="n" direction="inc" step="1">
                 <output expression="y" newline="True"/>
             </for>
+            <output expression="&quot;Fim For&quot;" newline="True"/>
+            <assign variable="z" expression="0"/>
+            <output expression="&quot;Do-While Loop:&quot;" newline="True"/>
+            <output expression="z" newline="True"/>
+            <do expression="z &lt; n">
+                <assign variable="z" expression="z + 1"/>
+                <output expression="z" newline="True"/>
+            </do>
+            <output expression="&quot;Fim Do-While&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>

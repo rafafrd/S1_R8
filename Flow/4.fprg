@@ -3,27 +3,40 @@
     <attributes>
         <attribute name="name" value="4"/>
         <attribute name="authors" value="DES-MH"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-16 09:59:09 "/>
-        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxNToyNiAiOzI2NzE="/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo1OTowNiAiOzE7REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODowNjozNyAiOzIuZnByZzs2MTA0"/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo1OTowOSAiOzI7Mjc5MA=="/>
+        <attribute name="about" value="Countdown 50-0 step 5 with 3 loops"/>
+        <attribute name="saved" value="2025-04-17"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="x, y" type="Integer" array="False" size=""/>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            
+            <!-- WHILE LOOP -->
             <assign variable="x" expression="50"/>
+            <output expression="&quot;While Loop:&quot;" newline="True"/>
             <output expression="x" newline="True"/>
             <while expression="x &gt; 0">
                 <assign variable="x" expression="x - 5"/>
                 <output expression="x" newline="True"/>
             </while>
-            <output expression="&quot;Fim&quot;" newline="True"/>
+            <output expression="&quot;Fim While&quot;" newline="True"/>
+            
+            <!-- FOR LOOP -->
+            <output expression="&quot;For Loop:&quot;" newline="True"/>
             <for variable="y" start="50" end="0" direction="dec" step="5">
                 <output expression="y" newline="True"/>
             </for>
-            <output expression="&quot;Fim&quot;" newline="True"/>
+            <output expression="&quot;Fim For&quot;" newline="True"/>
+            
+            <!-- DO-WHILE LOOP -->
+            <assign variable="z" expression="50"/>
+            <output expression="&quot;Do-While Loop:&quot;" newline="True"/>
+            <output expression="z" newline="True"/>
+            <do expression="z &gt; 0">
+                <assign variable="z" expression="z - 5"/>
+                <output expression="z" newline="True"/>
+            </do>
+            <output expression="&quot;Fim Do-While&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>

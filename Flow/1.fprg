@@ -1,28 +1,34 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="1"/>
-        <attribute name="authors" value="DES-MH"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-16 09:40:58 "/>
-        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwNzo1NToyMyAiOzI2NzE="/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxOTozNiAiOzE7REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxNToyNiAiOzQuZnByZzs2MTAy"/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo0MDo1OCAiOzM7Mjc4NQ=="/>
+        <attribute name="name" value="Loops Comparativos"/>
+        <attribute name="authors" value="Adaptado por IA"/>
+        <attribute name="about" value="Demonstra&#231;&#227;o de loops for, while e do-while"/>
+        <attribute name="saved" value="2025-04-17 09:02:53 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE3OyIwODoyNjozNSAiOzI2NzQ="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE3OyIwOTowMjo1MyAiOzE7Mjc3Nw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="x, y" type="Integer" array="False" size=""/>
-            <assign variable="x" expression="6"/>
-            <output expression="x" newline="True"/>
-            <while expression="x &lt; 12">
-                <assign variable="x" expression="x + 1"/>
-                <output expression="x" newline="True"/>
-            </while>
-            <output expression="&quot;Fim&quot;" newline="True"/>
-            <for variable="y" start="6" end="12" direction="inc" step="1">
-                <output expression="y" newline="True"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;FOR (6 a 12):&quot;" newline="True"/>
+            <for variable="i" start="6" end="12" direction="inc" step="1">
+                <output expression="i &amp; &quot; &quot;" newline="False"/>
             </for>
+            <output expression="&quot;WHILE (6 a 12):&quot;" newline="True"/>
+            <assign variable="i" expression="6"/>
+            <while expression="i &lt;= 12">
+                <output expression="i &amp; &quot; &quot;" newline="False"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="&quot;DO-WHILE (6 a 12):&quot;" newline="True"/>
+            <assign variable="i" expression="6"/>
+            <do expression="i &lt;= 12">
+                <output expression="i &amp; &quot; &quot;" newline="False"/>
+                <assign variable="i" expression="i + 1"/>
+            </do>
+            <output expression="&quot;Fim da demonstra&#231;&#227;o&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>

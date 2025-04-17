@@ -3,26 +3,40 @@
     <attributes>
         <attribute name="name" value="3"/>
         <attribute name="authors" value="DES-MH"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-16 09:57:36 "/>
-        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxMjo0NCAiOzI2Njg="/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxOToxNCAiOzE7REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwODoxNToyNiAiOzQuZnByZzs2MDk4"/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTE2OyIwOTo1NzozNiAiOzM7Mjc4OQ=="/>
+        <attribute name="about" value="Contagem 0-30 passo 3 com 3 loops"/>
+        <attribute name="saved" value="2025-04-17"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="x, y" type="Integer" array="False" size=""/>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            
+            <!-- WHILE LOOP -->
             <assign variable="x" expression="0"/>
+            <output expression="&quot;While:&quot;" newline="True"/>
             <output expression="x" newline="True"/>
             <while expression="x &lt; 30">
                 <assign variable="x" expression="x + 3"/>
                 <output expression="x" newline="True"/>
             </while>
-            <output expression="&quot;Fim&quot;" newline="True"/>
+            <output expression="&quot;Fim While&quot;" newline="True"/>
+            
+            <!-- FOR LOOP -->
+            <output expression="&quot;For:&quot;" newline="True"/>
             <for variable="y" start="0" end="30" direction="inc" step="3">
                 <output expression="y" newline="True"/>
             </for>
+            <output expression="&quot;Fim For&quot;" newline="True"/>
+            
+            <!-- DO-WHILE LOOP -->
+            <assign variable="z" expression="0"/>
+            <output expression="&quot;Do-While:&quot;" newline="True"/>
+            <output expression="z" newline="True"/>
+            <do expression="z &lt; 30">
+                <assign variable="z" expression="z + 3"/>
+                <output expression="z" newline="True"/>
+            </do>
+            <output expression="&quot;Fim Do-While&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
